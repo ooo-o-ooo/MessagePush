@@ -19,9 +19,8 @@ app.get("/api/app", (req:Request, res:Response) => {
 
 // 当访问根路径时，渲染 index.pug 模板并发送响应
 app.get('/', (req:Request, res:Response) => {
-    
-    res.render('index',{
-    }); // 渲染 views/index.pug 并发送响应
+    // 渲染 views/index.pug 并发送响应
+    res.render('index'); 
   });
   
 
