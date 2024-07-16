@@ -1,14 +1,12 @@
 import express, { Request, Response } from 'express';
 import axios from 'axios';
 
-
-const app = express();
 const CORP_ID = process.env.CORP_ID;
 const CORP_SECRET = process.env.CORP_SECRET;
 const AGENT_ID =  process.env.AGENT_ID;
 
-
 let returnStatus = '';
+const app = express();
 app.use(express.json());
 app.set('view engine', 'pug');
 app.set('views', './views'); 

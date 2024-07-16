@@ -5,41 +5,33 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible" content="ie=edge")
     title Ross's API
-    // 这里可以链接到一个外部的CSS文件，例如 <link rel="stylesheet" href="styles.css">
+    //- link(rel="stylesheet" href="styles.css") // 假设styles.css是存在的
   body
     h1 Ross's API
-    p 当你看到这个页面,说明本站的API服务正常工作~
-      br
-      br
-    a(href="https://www.onross.com/") 回到博客
-    // 如果你想在Pug中直接包含样式，可以使用style标签，但通常不推荐
+    p 当你看到这个页面, 说明本站的API服务正常工作~
+        br
+        br
+        a(href="https://www.onross.com/") 回到博客
     style.
-      html, body {
-        height: 100vh;
-        width: 100vw;
-        margin: 0;
-        padding: 0;
-        background: #ffffff;
-        text-align: center;
-        margin-top: 30px;
-        overflow: hidden;
-      }
-      * {
-        color: rgb(100, 100, 100);
-      }
-      a {
-        color: #42b983;
-      }
-      ul, li {
-        margin: 0;
-      }
-      ul {
-        margin-left: -40px;
-        line-height: 30px;
-      }
-      li {
-        list-style: none;
-      }
-      h1 {
-        padding-top: 200px;
-      }
+      html, body
+        height: 100vh
+        width: 100vw
+        margin: 0
+        padding: 0
+        background: #ffffff
+        text-align: center
+        margin-top: 30px
+        overflow: hidden
+      *
+        color: rgb(100, 100, 100)
+      a
+        color: #42b983
+      ul, li
+        margin: 0
+      ul
+        margin-left: -40px
+        line-height: 30px
+      li
+        list-style: none
+      h1
+        padding-top: 200px
